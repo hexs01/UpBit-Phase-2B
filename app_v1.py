@@ -25,6 +25,6 @@ if st.button("Predict"):
     st.write(f"""
         <div style='font-size:24px;'>
             Predicted Affordability:<br>
-            <span style='font-size:20px;'>{result[}</span>
+            <span style='font-size:20px;'>{result}</span>
         </div>
         """, unsafe_allow_html=True)
