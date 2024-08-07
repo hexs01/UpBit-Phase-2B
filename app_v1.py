@@ -22,4 +22,9 @@ revenue = st.slider("Revenue (RM mil)", min_value=0, max_value=1000)
 # Button to make the prediction
 if st.button("Predict"):
     result = prediction(capex, opex, performance, revenue)
-    st.write(f"The prediction is: {result}")
+    st.write(f"""
+        <div style='font-size:24px;'>
+            Predicted Performance:<br>
+            <span style='font-size:20px;'>{result[0]}</span>
+        </div>
+        """, unsafe_allow_html=True)
