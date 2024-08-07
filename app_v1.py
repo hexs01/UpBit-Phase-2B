@@ -24,7 +24,7 @@ if st.button("Predict"):
     result = prediction(capex, opex, performance, revenue)
     st.write(f"""
         <div style='font-size:24px;'>
-            Predicted Performance:<br>
-            <span style='font-size:20px;'>{result[0]}</span>
+            Predicted Affordability:<br>
+            <span style='font-size:20px;'>{result[}</span>
         </div>
         """, unsafe_allow_html=True)
